@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3 mini test</title>
+</head>
+<body>
+<input type="number" id="giatri" placeholder="so tu nhien">
+       <button type="button" onclick="Up()">Up</button>
+       <button type="button" onclick="Down()">Down</button>
+<br><p id = "result"></p>
+<script>
+  let sobatky = document.getElementById("giatri");
+  function Up() {
+      let result = parseFloat(sobatky.value)+ 2;
+      document.getElementById("result").innerHTML = "result" + result;
+  }
+  function Down() {
+      let result = parseFloat(sobatky.value)- 2;
+      document.getElementById("result").innerHTML = "result" + result;
+  }
+</script>
+</body>
+</html>
